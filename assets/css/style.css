@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+/* apply styles to <header> */
+header {
+  padding: 20px 35px;
+  background-color: #41454d;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+  display:flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+#logo {
+  font-weight: bold;
+  font-size: 20px;
+  color: #f7E2E2;
+  margin: 0;
+  text-decoration: none;
+}
+
+nav {
+  align-self: center;
+}
+
+header a {
+  color: #f7E2E2;
+  font-size: .8rem;
+  margin: 10px;
+}
+
+body {
+  /* more on this crazy alphanumerical value in a minute! */
+  color: #187666;
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: #f7E2E2;
+}
+
+footer {
+  background: #16192f;
+  width: 100%;
+  padding: 40px 35px;
+  text-align: center;
+  color: #f7E2E2;
+}
+
+footer h2 {
+  display: inline;
+  color: #f7E2E2;
+  font-size: 30px;
+  margin: 0 0 10px;
+  text-decoration: underline;
+}
+
+footer .contact-info {
+  margin-top: 10px;
+}
+
+footer .contact-info p {
+  margin-bottom: 5px;
+}
+
+footer .contact-info a {
+  color: #f7E2E2;
+  text-decoration: none;
+}
+
+footer .social-media-icons img {
+  width: 50px;
+  padding: 10px;
+  filter: invert(1);
+}
+
+  /* Hero Style Start */
+.hero {
+  background-image: url("../images/hero.jpeg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 200px;
+}
+  
+.hero-text {
+  width: 50%;
+  height: 100%;
+  color: #f7E2E2;
+  text-align: center;
+  font-style: italic;
+  margin: 0 0 0 20px;
+  display: flex;
+}
+
+.hero-text p {
+  align-self: center;
+} 
+
+.section-title {
+  margin-bottom: 20px;
+  text-decoration: underline;
+}
+
+.section-image {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.section-images {
+  margin-top: 20px;
+  display: flex;
+}
+
+.section-images div {
+  flex: 1;
+}
+
+.section-images img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#about-me {
+  margin: 20px;
+  background: #187666;
+  color: #f7E2E2;
+  padding: 20px;
+}
+
+#about-me-content {
+  margin-right: 20px;
+}
+
+#about-me img {
+  margin: auto;
+  width: 50vw;
+}
+
+#work {
+background-color:#187666; 
+color: #f7E2E2;
+margin: 0 20px;
+padding: 20px;
+}
+
+#work a {
+  color: #f7E2E2;
+}
+
+#pets {
+  background-color:#187666; 
+  color: #f7E2E2;
+  margin: 20px;
+  padding: 20px;
+}
+
+#work img {
+  margin: auto;
+  width: 50%;
+  
+}
+
+@media (min-width: 762px) {
+  #logo {
+    font-size: 36px;
+  }
+  header a {
+    font-size: 1.5rem;
+  }
+  .hero-text {
+    width: 33%;
+  }
+
+  #about-me {
+    display: flex;
+  }
+  #about-me .section-image {
+    margin: 0;
+  }
+  #about-me .section-image img {
+    width: 20vw;
+  }
+  #two-columns {
+    display: flex;
+  }
+  #work {
+    margin: 0 10px 20px 20px;
+  }
+  #work img {
+    width: 100%;
+  }
+  #pets {
+    margin: 0 20px 20px 10px;
+  }
+}
