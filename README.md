@@ -7,7 +7,7 @@ github - (https://github.com/austindavis95)
 ## Project Links
 
 Live URL - https://austindavis95.github.io/run-buddy/
-github URL- 
+github URL- https://github.com/austindavis95/Weekly-Challenge-2
 
 ## Weekly Challenge - 2
 
