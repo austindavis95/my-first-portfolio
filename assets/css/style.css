@@ -1,13 +1,27 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: #f7E2E2;
+  color: #f7E2E2;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  color: #f7E2E2;
+}
 
 /* apply styles to <header> */
 header {
   padding: 20px 35px;
-  background-color: #41454d;
+  background-color: #16192f;
   top: 0;
   z-index: 2;
   width: 100%;
@@ -19,7 +33,6 @@ header {
 #logo {
   font-weight: bold;
   font-size: 20px;
-  color: #f7E2E2;
   margin: 0;
   text-decoration: none;
 }
@@ -29,51 +42,8 @@ nav {
 }
 
 header a {
-  color: #f7E2E2;
   font-size: .8rem;
   margin: 10px;
-}
-
-body {
-  /* more on this crazy alphanumerical value in a minute! */
-  color: #187666;
-  font-family: Helvetica, Arial, sans-serif;
-  background-color: #f7E2E2;
-}
-
-footer {
-  background: #16192f;
-  width: 100%;
-  padding: 40px 35px;
-  text-align: center;
-  color: #f7E2E2;
-}
-
-footer h2 {
-  display: inline;
-  color: #f7E2E2;
-  font-size: 30px;
-  margin: 0 0 10px;
-  text-decoration: underline;
-}
-
-footer .contact-info {
-  margin-top: 10px;
-}
-
-footer .contact-info p {
-  margin-bottom: 5px;
-}
-
-footer .contact-info a {
-  color: #f7E2E2;
-  text-decoration: none;
-}
-
-footer .social-media-icons img {
-  width: 50px;
-  padding: 10px;
-  filter: invert(1);
 }
 
   /* Hero Style Start */
@@ -99,14 +69,29 @@ footer .social-media-icons img {
   align-self: center;
 } 
 
+.section {
+  background: #187666;
+  margin: 20px 20px 0;
+  padding: 20px;
+}
+
 .section-title {
   margin-bottom: 20px;
   text-decoration: underline;
 }
 
+.section-content {
+  margin-right: 20px;
+}
+
 .section-image {
   margin-top: 20px;
   text-align: center;
+}
+
+.section-image img {
+  margin: auto;
+  width: 50vw;
 }
 
 .section-images {
@@ -124,44 +109,39 @@ footer .social-media-icons img {
   object-fit: cover;
 }
 
-#about-me {
-  margin: 20px;
-  background: #187666;
-  color: #f7E2E2;
-  padding: 20px;
+.three-column-section {
+  padding:  0 10px;
 }
 
-#about-me-content {
-  margin-right: 20px;
+.three-column-section .section {
+  flex: 1;
+  margin: 20px 10px 0;
 }
 
-#about-me img {
-  margin: auto;
-  width: 50vw;
+#project-two img, #project-three img {
+  width: 100%;
 }
 
-#work {
-background-color:#187666; 
-color: #f7E2E2;
-margin: 0 20px;
-padding: 20px;
+footer {
+  margin: 20px 0 0 0;
+  padding: 40px;
+  background: #16192f;
+  text-align: center;
 }
 
-#work a {
-  color: #f7E2E2;
+footer .section-title {
+  font-size: 30px;
+  margin-bottom: 10px;
 }
 
-#pets {
-  background-color:#187666; 
-  color: #f7E2E2;
-  margin: 20px;
-  padding: 20px;
+footer a {
+  text-decoration: none;
 }
 
-#work img {
-  margin: auto;
-  width: 50%;
-  
+footer .social-media-icons img {
+  width: 50px;
+  padding: 10px;
+  filter: invert(1);
 }
 
 @media (min-width: 762px) {
@@ -174,26 +154,13 @@ padding: 20px;
   .hero-text {
     width: 33%;
   }
-
-  #about-me {
+  .full-length-section {
     display: flex;
   }
-  #about-me .section-image {
-    margin: 0;
-  }
-  #about-me .section-image img {
+  .section-image img {
     width: 20vw;
   }
-  #two-columns {
+  .three-column-section {
     display: flex;
-  }
-  #work {
-    margin: 0 10px 20px 20px;
-  }
-  #work img {
-    width: 100%;
-  }
-  #pets {
-    margin: 0 20px 20px 10px;
   }
 }
