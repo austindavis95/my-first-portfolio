@@ -6,8 +6,8 @@ github - (https://github.com/austindavis95)
 
 ## Project Links
 
-Live URL -https://austindavis95.github.io/my-first-portfolios
-github URL- https://github.com/austindavis95/my-first-portfolios
+Live URL -https://austindavis95.github.io/my-first-portfolio
+github URL- https://github.com/austindavis95/my-first-portfolio
 
 ## Weekly Challenge - 2
 
